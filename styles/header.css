@@ -91,6 +91,7 @@
 
     .opcoes{
         display: flex;
+     
     }
 
     .opcoes__item{
@@ -121,4 +122,10 @@
         display: block;
         width: auto;
     }
-}
+    
+    .opcao__botao{
+        display: none;
+    }
+
+   
+    }
