@@ -81,9 +81,18 @@
     </div>
 
     <div class="container">
-        <a href="#"><img src="img/Favoritos.svg" alt="Meu Favoritos" class="container__imagem container__imagem-transparente"></a>
-        <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-        <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        <a 
+            href="#"><img src="img/Favoritos.svg" alt="Meu Favoritos" class="container__imagem container__imagem-transparente">
+           
+        </a>
+        <a 
+            href="#" class="container__link"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+            
+        </a>
+        <a 
+            href="#" class="container__link"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem container__imagem__usuario">
+            
+        </a>
     </div>
    </header>
    <section class="banner">
@@ -91,6 +100,7 @@
         <p class="banner__texto">Navegue pela nossa estante e encontre o que está precisando</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
    </section>
+    </section>
    <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <div class="swiper">
@@ -126,8 +136,8 @@
                 <div class="card__botoes">
                     <!--1°coluna-->
                     <ul class="botoes">
-                       <li  class="botoes__item"> <img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                       <li  class="botoes__item"> <img src="img/Compras.svg" alt="Comprar livro"></li>
+                       <li  class="botoes__item"> <img class="card__botao--icone" src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                       <li  class="botoes__item"> <img class="card__botao--icone" src="img/Compras.svg" alt="Comprar livro"></li>
 
                     </ul>
                     <!--2°coluna-->
@@ -184,8 +194,8 @@
             <div class="card__botoes">
                 <!-- 1º coluna -->
                 <ul class="botoes">
-                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    <li class="botoes__item"><img class="card__botao--icone"  src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img class="card__botao--icone"  src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
                 </ul>
                 <!-- 2º coluna -->
                 <a href="#" class="botoes__ancora">Saiba mais</a>
@@ -223,16 +233,21 @@
 
     </section>
     
-    <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros</p>
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    <section class="logo__rodape">
+        <img src="img/logo (3).png" alt="Logo do Recanto da Leitura" class="container__imagem-rodape">
+        <h1 class="container__titulo-rodape"><b class="container__titulo--negrito--rodape"> Recanto</b> da Leitura</h1>
     </section>
-    <hr/>
-    <footer>
-        <h2 class="rodape">Projeto de Rachel Pereira</h2>
-
-    </footer>
+    <hr/> <!--Traço de divisão-->
+    <footer class="rodape">
+        
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+            
+            <div class="copyright">
+                 Copyright Livraria Recanto da Leitura. Todos os direitos reservados.
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
          const swiper = new Swiper('.swiper', {

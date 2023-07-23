@@ -3,7 +3,7 @@
     background-color: var(--fundo-menu);
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px ;
+    font-size: 28px ;
     font-weight: 700;
     padding: 1em 0 0.5em 0;
 }
@@ -12,9 +12,6 @@
     width: 100%;
 }
 
-.swiper-button-prev, .swiper-button-next{
-    display: none;
-}
 
 .swiper-pagination{
     position: initial;
@@ -96,3 +93,147 @@
 .descricao__imagem-autora{
     width: 60vw;
 }
+
+@media (max-width: 400px) {  
+    .carrossel__titulo{
+        color: var(--titulo);
+        background-color: var(--fundo-menu);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: clamp(1rem, 2vw, 3rem) ;
+        font-weight: 700;
+        padding: 1em 0 0.5em 0;
+    }
+    
+    .swiper-slide img{
+        width: 100%;
+    }
+    
+    
+    .swiper-pagination{
+        position: initial;
+        margin: 0.5em 0;
+    }
+    .card__descricao{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    }
+    
+    .card__botoes{
+        display: flex;
+        justify-content: space-between;
+        
+
+        
+    }
+    .card__botao--icone{
+       width: calc(1em + 4vw) ;
+    }
+    .botoes{
+        display: flex;
+    }
+    
+    .card{
+        background: var(--titulo);
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        margin: 1em;
+        padding: 1em;
+    }
+    
+    .descricao{
+        margin-top: 2vh;
+    }
+    
+    .estrelinhas{
+        margin-bottom: 1vh;
+    }
+    .descricao__titulo{
+        color: var(--cor--menu);
+        font-weight: 700;
+        margin-bottom: 3vh;
+        font-size: calc(1em + -1vw);
+    }
+    
+    .descricao__titulo-livro{
+        color: var(--fundo-menu);
+        font-size: clamp(0.8rem, 2vw, 3rem);
+        font-weight: 700;
+        margin: 0.5em 0;
+    }
+    
+    .descricao__texto{
+        font-size: clamp(0.7rem, 2vw, 3rem);
+        color: var(--fundo-menu);
+        
+        
+    }
+    
+    .botoes__item{
+        margin: calc(1em + -2vw);
+        
+        
+    }
+    
+    .botoes__ancora{
+        background-color: var(--cor--menu);
+        padding: calc(0em + 5vw);
+        color: var(--fundo-menu);
+        font-weight: 700;
+        text-decoration: none;
+        font-size: clamp(0rem, 4vw, 3rem) ;
+       
+        
+    }
+    
+    .descricao__imagem{
+        width: calc(1em + 25vw);
+    }
+    
+    .mais__vendidos-titulo{
+        background: var(--fundo-menu);
+    
+    
+    }
+    
+    .descricao__imagem-autora{
+        width:  calc(1em + 32vw);
+    }
+    
+}
+
+/*
+@media  screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: clamp(1rem, 2.5vw, 2rem);
+    }
+    
+    .swiper-pagination{
+        margin: 2em 0 3em 0
+    }
+
+    .swiper{
+        width: calc(1em + 70vw) ;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: calc(1em + 24vw)
+    }
+
+    .card{
+        width: calc(1em + 50vw) ;
+        margin: 2em auto;
+    }
+
+    .descricao__imagem{
+        width: calc(1em + 18vw);
+    }
+
+    .descricao__imagem-autora{
+        width: calc(1em + 20vw);
+    }
+}
+
+
