@@ -1,4 +1,4 @@
-#  Interface Libraria Online
+#  Interface Livraria Online
 Projeto feito com finalidade de mostra uma interface de uma livraria online com opções de compra e venda. 
 
 # Tecnologias utilizadas
