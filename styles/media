@@ -27,9 +27,6 @@
 
   }
 
-  @media (min-width: 672px) and (max-width: 761.98px) {
-
-  }
 
   @media (min-width: 762px) and (max-width: 841.98px) {
 
@@ -58,7 +55,7 @@
 
   }
 
-  @media (min-width: 1242px) {
+  @media (min-width: 1242px) and (max-width:1600.98px) {
 
    
 
